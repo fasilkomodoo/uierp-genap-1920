@@ -42,6 +42,6 @@ Modul yang akan dikembangkan termasuk ke dalam kategori accounting. Walaupun inv
 ----------
 **Link Ide Modul:** [document's link](https://medium.com/@dora.uierp1/rencana-pengembangan-modul-accounting-odoo-12-7d6a075d41d3)
 
-**Link Youtube:** menyusul
+**Link Youtube:** [lik youtube](https://youtu.be/ACAsa8yZtZM)
 
 **Link Prasyarat Modul Accounting Odoo12**: [Odoo'mates](https://apps.odoo.com/apps/modules/12.0/om_account_accountant/)
