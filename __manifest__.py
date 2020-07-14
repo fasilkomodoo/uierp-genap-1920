@@ -9,7 +9,7 @@
     'images':[],
     'depends': ['purchase'],
     'data': [
-        'po_extend_view.xml',
+        'views/po_extend_view.xml',
     ],
     'installable': True,
 }
