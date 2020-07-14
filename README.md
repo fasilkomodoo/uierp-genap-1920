@@ -1,11 +1,17 @@
-# Pur-for-me
+# Pur-Chase
 
-Enterprise Purchasing App, Integrated with Odoo Community v12.0 \
-[General development idea](https://github.com/fasilkomodoo/uierp-genap-1920/blob/1706043670_Nathanael/documents/development_idea/0.0.1.md)
+On development Enterprise Purchasing Web Application, Integrated with Odoo Community v12.0
 
-## Getting Started
+## Getting Started on Localhost
 
-Initialized using Flutter Dev
+- Clone or Download this Branch
+- Extract and rename the downloaded folder to pur_chase
+- Install XAMPP on your device
+- Move the downloaded folder to xampp/htdocs (so you could find this file on xampp/htdocs/pur_chase/readme.md)
+- Run Apache Server using XAMPP
+- Open http://localhost/pur_chase
+- Insert your Odoo URL, Database Name, Email, and Password
+- If your credential is correct, you will be redirected to admin panel
 
 ## Author
 
