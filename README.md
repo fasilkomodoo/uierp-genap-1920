@@ -1,5 +1,5 @@
 # UAS Konfigurasi ERP — Extra Modul — Pengembangan Modul Human Resourse (Employee) Dengan Penambahan ID Employee
-Modul ini dibuat untuk memenuhi soal UAS Konfigurasi ERP nomor 8. Dokumentasi lengkap dari pengembangan modul dan cara menggunakannya dapat diakses pada [link ini](#) atau [link ini](https://docs.google.com/document/d/1zNCpZPE3IukBDXFuRpeeMxMWxu36gQfXYMe0lTV6snU/edit?usp=sharing). Video instalasi dan tutorial penggunaan dapat diakses pada [link ini](https://youtu.be/JUwYgzocfiU).
+Modul ini dibuat untuk memenuhi soal UAS Konfigurasi ERP nomor 8. Dokumentasi lengkap dari pengembangan modul dan cara menggunakannya dapat diakses pada [Medium](#) atau [Google Docs](https://docs.google.com/document/d/1zNCpZPE3IukBDXFuRpeeMxMWxu36gQfXYMe0lTV6snU/edit?usp=sharing). Video instalasi dan tutorial penggunaan dapat diakses pada [Youtube](https://youtu.be/JUwYgzocfiU).
 
 # Ide Pengembangan Awal
 ## Latar Belakang
@@ -16,7 +16,7 @@ Fitur akan ditaruh pada menu ‘Employees’. Untuk menambahkan karyawan, penggu
 Pada Odoo 12, karyawan (employee) hanya memiliki ID yang diperoleh dari database saat melakukan input data karyawan. Beberapa perusahaan membedakan ID yang berada di database dan ID yang diperoleh karyawan ketika ia diterima untuk bekerja di perusahaan. Dengan adanya tambahan field ID yang dimiliki oleh karyawan, diharapkan pencarian karyawan dapat menjadi lebih mudah.
 
 ## Ruang Lingkup
-Modul yang akan dikembangkan akan membutuhkan modul Point of Sales dan menggunakan data konfigurasi point of sale dan pengguna Odoo.Modul yang akan dikembangkan termasuk ke dalam kategori Human Resource. Modul ini membutuhkan apps Employee (hr) untuk dapat digunakan.
+Modul yang akan dikembangkan termasuk ke dalam kategori Human Resource. Modul ini membutuhkan apps Employee (hr) untuk dapat digunakan.
 
 ## Rencana Fitur
 Fitur akan ditaruh pada menu ‘Employees’. Ketika menambahkan karyawan atau mengubah informasi karyawan, terdapat field baru yang bernama Employee’s ID. Setelah perubahan disimpan, ID milik karyawan tersebut dapat dilihat.
