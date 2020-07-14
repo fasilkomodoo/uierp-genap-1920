@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- window action -->
+        <!--
+            The following tag is an action definition for a "window action",
+            that is an action opening a view or a set of views
+        -->
+        <!-- session form view -->
+        <record model="ir.ui.view" id="shipment_form_view">
+            <field name="name">shipment.form</field>
+            <field name="model">shipment_list.shipment_list</field>
+            <field name="arch" type="xml">
+                <form string="Shipment Form">
+                    <sheet>
+                        <group>
+                            <field name="date"/>
+                            <field name="shipment_id"/>
+                            <field name="shipping_date"/>
+                            <field name="status"/>
+                            <field name="expedition"/>
+                            <field name="shipping_cost"/>
+                            <field name="country"/>
+                            <field name="region"/>
+                            <field name="city"/>
+                            <field name="postal_code"/>
+                            <field name="address"/>
+                            <field name="phone_number"/>
+                        </group>
+                        <label for="purchase_order"/>
+                        <field name="purchase_order"/>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="shipment_tree" model="ir.ui.view">
+            <field name="name">Shipment List and Status</field>
+            <field name="model">shipment_list.shipment_list</field>
+            <field name="arch" type="xml">
+               <tree>
+                    <field name="date"/>
+                    <field name="shipment_id"/>
+                    <field name="purchase_order"/>
+                    <field name="shipping_date"/>
+                    <field name="status"/>
+                    <field name="expedition"/>
+                    <field name="shipping_cost"/>
+                    <field name="country"/>
+                    <field name="region"/>
+                    <field name="city"/>
+                    <field name="postal_code"/>
+                    <field name="address"/>
+                    <field name="phone_number"/>
+               </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="shipment_list_action">
+            <field name="name">Shipment List and Status</field>
+            <field name="res_model">shipment_list.shipment_list</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="shipment_tree"/>
+        </record>
+        
+        <menuitem id="menu_shipment" name="Shipment"
+            parent="purchase.menu_procurement_management"
+            action="shipment_list_action" sequence="15"/>
+
+        <!-- top level menu: no parent -->
+        <!-- <menuitem id="main_shipment_menu" name="PoS User List"/> -->
+        <!-- A first level in the left side menu is needed
+             before using action= attribute -->
+        <!-- <menuitem id="shipment_menu" name="Point of Sale"
+                  parent="point_of_sale.menu_point_root"/> -->
+        <!-- the following menuitem should appear *after*
+             its parent openacademy_menu and *after* its
+             action hello_list_action --><!-- 
+        <menuitem id="user_list_menu" name="User List and Status" parent="shipment_list.menu_point_rep"
+                  action="shipment_list_action"/> -->
+        <!-- Full id location:
+             action="openacademy.hello_list_action"
+             It is not required when it is the same module -->
+    </data>
+</odoo>
