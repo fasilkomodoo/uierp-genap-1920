@@ -1,5 +1,5 @@
 # UAS Konfigurasi ERP — Extra Modul — Pengembangan Modul Human Resourse (Employee) Dengan Penambahan ID Employee
-Modul ini dibuat untuk memenuhi soal UAS Konfigurasi ERP nomor 8. Dokumentasi lengkap dari pengembangan modul dan cara menggunakannya dapat diakses pada [link ini](https://docs.google.com/document/d/1BZWd8ZtUjk1xdyv_W0l4edCf1kWuAjX3AclQisnUt48/edit?usp=sharing) atau [link ini](https://medium.com/@scoobydoo.uierp1/uas-konfigurasi-erp-extra-modul-b52981e9861a). Video instalasi dan tutorial penggunaan dapat diakses pada [link ini](https://www.youtube.com/watch?v=RyqTM4vETgI).
+Modul ini dibuat untuk memenuhi soal UAS Konfigurasi ERP nomor 8. Dokumentasi lengkap dari pengembangan modul dan cara menggunakannya dapat diakses pada [link ini](#) atau [link ini](#). Video instalasi dan tutorial penggunaan dapat diakses pada [link ini](https://youtu.be/JUwYgzocfiU).
 
 # Ide Pengembangan Awal
 ## Latar Belakang
