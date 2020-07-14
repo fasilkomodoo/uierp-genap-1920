@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- window action -->
+        <!--
+            The following tag is an action definition for a "window action",
+            that is an action opening a view or a set of views
+        -->
+        <!-- session form view -->
+        <record model="ir.ui.view" id="posul_form_view">
+            <field name="name">posul.form</field>
+            <field name="model">pos_user_list.pos_user_list</field>
+            <field name="arch" type="xml">
+                <form string="Posul Form">
+                    <sheet>
+                        <group>
+                            <field name="pos_config"/>
+                            <field name="date"/>
+                            <field name="status"/>
+                            <field name="number_of_users"/>
+                        </group>
+                        <label for="users"/>
+                        <field name="users"/>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="posul_tree" model="ir.ui.view">
+            <field name="name">Point of Sale User List and Status</field>
+            <field name="model">pos_user_list.pos_user_list</field>
+            <field name="arch" type="xml">
+               <tree>
+                   <field name="date" />
+                   <field name="pos_config" />
+                   <field name="status" />
+                   <field name="number_of_users" />
+                   <field name="users" />
+               </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="posul_list_action">
+            <field name="name">Point of Sale User List and Status</field>
+            <field name="res_model">pos_user_list.pos_user_list</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="posul_tree"/>
+        </record>
+
+        <!-- top level menu: no parent -->
+        <!-- <menuitem id="main_posul_menu" name="PoS User List"/> -->
+        <!-- A first level in the left side menu is needed
+             before using action= attribute -->
+        <!-- <menuitem id="posul_menu" name="Point of Sale"
+                  parent="point_of_sale.menu_point_root"/> -->
+        <!-- the following menuitem should appear *after*
+             its parent openacademy_menu and *after* its
+             action hello_list_action -->
+        <menuitem id="user_list_menu" name="User List and Status" parent="point_of_sale.menu_point_rep"
+                  action="posul_list_action"/>
+        <!-- Full id location:
+             action="openacademy.hello_list_action"
+             It is not required when it is the same module -->
+    </data>
+</odoo>
