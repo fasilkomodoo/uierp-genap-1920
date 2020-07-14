@@ -1,0 +1,20 @@
+<odoo>
+    <data noupdate="1">
+        <record id="initial_data" model="summary.invoice.bill">
+            <field name="invoice_overdue_total">0.0</field>
+            <field name="bill_overdue_total">0.0</field>
+            <field name="invoice_due_within_7_days_next">0.0</field>
+            <field name="bill_due_within_7_days_next">0.0</field>
+            <field name="invoice_due_within_one_month_next">0.0</field>
+            <field name="bill_due_within_one_month_next">0.0</field>
+            <field name="unpaid_invoice_from_last_week">0.0</field>
+            <field name="unpaid_bill_from_last_week">0.0</field>
+            <field name="unpaid_invoice_from_one_month_before">0.0</field>
+            <field name="unpaid_bill_from_one_month_before">0.0</field>
+            <field name="invoice_payment_total">0.0</field>
+            <field name="bill_payment_total">0.0</field>
+            <field name="Average_time_to_get_paid_invoice">0.0</field>
+            <field name="Average_time_to_get_paid_bill">0.0</field>
+        </record>
+    </data>
+</odoo>

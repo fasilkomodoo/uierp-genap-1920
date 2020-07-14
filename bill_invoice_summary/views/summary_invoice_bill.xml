@@ -1,0 +1,112 @@
+<odoo>
+  <record id="action_overdue_tree" model="ir.ui.view">
+    <field name="name">overdue.summary.tree</field>
+    <field name="model">summary.invoice.bill</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="Last_updated" string="Last Updated"/>
+        <field name="currency_id" invisible="1"/>
+        <field name="invoice_overdue_total" string="Invoice Overdue Total" widget="monetary" options="{'currency_field': 'currency_id'}" readonly="False"/>
+        <field name="bill_overdue_total" string="Bill Overdue Total" widget="monetary" options="{'currency_field': 'currency_id'}" readonly="False"/>
+        <field name="Average_time_to_get_paid_invoice" string="Avg day for paying invoice (Days)"/>
+        <field name="Average_time_to_get_paid_bill" string="Avg day for paying bill (Days)"/>
+      </tree>
+    </field>
+  </record>
+
+  <!-- model.name form view -->
+  <record id="action_overdue_form" model="ir.ui.view">
+    <field name="name">overdue.summary.form</field>
+    <field name="model">summary.invoice.bill</field>
+    <field name="arch" type="xml">
+      <form string="Overdue Summary" edit="false">
+        <sheet>
+          <h1>
+            <label for="Last_updated" string="Invoice &amp; Bill Due Summary On:"/><br/>
+            <field name="Last_updated" class="oe_inline"/>
+          </h1>
+          <group>
+            <!-- Add your fields here -->
+            <group>
+              <field name="currency_id" invisible="1"/>
+              <field name="invoice_overdue_total" widget="monetary" options="{'currency_field': 'currency_id'}" readonly="False" class="oe_left"/>
+              <p>
+                <label for="invoice_payment_total" string="But, you have already receive invoices of "/><b>
+                <field name="currency_id" invisible="1"/>
+                <field name="invoice_payment_total" class="oe_inline" widget="monetary" options="{'currency_field': 'currency_id'}" readonly="False"/>
+                </b>
+              </p>
+              <newline/>
+              <field name="Average_time_to_get_paid_invoice" string="Average days until invoice get paid: " class="oe_left"/><p> Days</p>
+            </group>
+            <group>
+              <field name="currency_id" invisible="1"/>
+              <field name="bill_overdue_total" widget="monetary" options="{'currency_field': 'currency_id'}" readonly="False" class="oe_left"/>
+              <p>
+                <label for="bill_payment_total" string="But, you have already paid bills of "/><b>
+                <field name="currency_id" invisible="1"/>
+                <field name="bill_payment_total" class="oe_inline" widget="monetary" options="{'currency_field':'currency_id'}" readonly="False"/>
+                </b>
+              </p>
+              <newline/>
+              <field name="Average_time_to_get_paid_bill" string="Average days until bill's payment: " class="oe_left"/><p> Days</p>
+            </group>
+            <newline/>
+            <hr/>
+            <newline/>
+            <h3>Timeline Overdue Invoices
+            </h3>
+            <newline/>
+            <group>
+              <field name="currency_id" invisible="1"/>
+              <field name="invoice_due_within_7_days_next" string="Amount due within the next 7 days" widget="monetary" options="{'currency_field': 'currency_id'}" readonly="False" class="oe_left"/>
+            </group>
+            <group>
+              <field name="currency_id" invisible="1"/>
+              <field name="invoice_due_within_one_month_next" string="Amount due within more than next 7 days" widget="monetary" options="{'currency_field': 'currency_id'}" readonly="False" class="oe_left"/>
+            </group>
+            <group>
+              <field name="currency_id" invisible="1"/>
+              <field name="unpaid_invoice_from_last_week" string="Unpaid invoices for the last 7 days" widget="monetary" options="{'currency_field': 'currency_id'}" readonly="False" class="oe_left"/>
+            </group>
+            <group>
+              <field name="currency_id" invisible="1"/>
+              <field name="unpaid_invoice_from_one_month_before" string="Unpaid invoices for more than the last 7 days" widget="monetary" options="{'currency_field': 'currency_id'}" readonly="False" class="oe_left"/>
+            </group>
+            <newline/>
+            <hr/>
+            <newline/>
+            <h3>Timeline Overdue Bill
+            </h3>
+            <newline/>
+            <group>
+              <field name="currency_id" invisible="1"/>
+              <field name="bill_due_within_7_days_next" string="Amount due within the next 7 days" widget="monetary" options="{'currency_field': 'currency_id'}" readonly="False" class="oe_left"/>
+            </group>
+            <group>
+              <field name="currency_id" invisible="1"/>
+              <field name="bill_due_within_one_month_next" string="Amount due within more than the next 7 days" widget="monetary" options="{'currency_field': 'currency_id'}" readonly="False" class="oe_left"/>
+            </group>
+            <group>
+              <field name="currency_id" invisible="1"/>
+              <field name="unpaid_bill_from_last_week" string="Unpaid bills for the last 7 days" widget="monetary" options="{'currency_field': 'currency_id'}" readonly="False" class="oe_left"/>
+            </group>
+            <group>
+              <field name="currency_id" invisible="1"/>
+              <field name="unpaid_bill_from_one_month_before" string="Unpaid bills for more than the last 7 days" widget="monetary" options="{'currency_field': 'currency_id'}" readonly="False" class="oe_left"/>
+            </group>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="action_overdue" model="ir.actions.server">
+    <field name="name">Overdue Summary</field>
+    <field name="model_id" ref="bill_invoice_summary.model_summary_invoice_bill"/>
+    <field name="state">code</field>
+    <field name="code">action = model.summary_calculate()</field>
+  </record>
+  
+  <menuitem id="bill_invoice_sum_menu" name="Overdue Summary" parent="account.account_reports_management_menu" action="action_overdue"/>
+</odoo>
