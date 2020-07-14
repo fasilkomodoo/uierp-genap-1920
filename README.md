@@ -1,8 +1,5 @@
 # uierp-genap-1920
 
-Selamat Datang di Kuliah Konfigurasi ERP Fasilkom UI.
+Ide Modul: Years of Work
 
-Repository ini berfungsi sebagai submission box Tugas Akhir.
-
-Silahkan membuat branch baru dengan format [npm_nama] untuk menyimpan ide modul serta source codenya.
-Contoh: 1506757661_May Iffah Rizki
+Ide modul years of work terinspirasi ketika Saya melakukan pencarian kerja di website loker. Terdapat 'minimum years of experience' pada loker tersebut. Saya merasa HR membutuhkan takaran yang jelas akan berapa lama seseorang mengabdi pada perusahaan tersebut. Untuk itu, pada modul Employee saya menambahkan kolom 'Date of Join' dan 'Years of Work' untuk membantu HR memonitor berapa lama seorang karyawan bekerja dan mengabdi pada sebuah perusahaan sehingga dapat diapresiasi lebih lama waktu orang tersebut bekerja.
