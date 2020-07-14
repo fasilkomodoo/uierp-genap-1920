@@ -1,5 +1,5 @@
 {
-    'name': 'Employee Length of Work',
+    'name': 'Employee Year of Work',
     'version': '12.0.1.0',
     'sequence': 1,
     'category': 'Generic Modules/Human Resources',
