@@ -2,7 +2,7 @@
 SchAccount
 =======
 
-Modul ini akan memudahkan sekolah untuk melakukan pencatatan kegiatan belajar mengajar sekolah SMPK Santa Clara Surabaya.
+Modul ini akan memudahkan sekolah untuk melakukan pencatatan dan pengingatan mengenai pembayaran uang sekolah kepada murid sekolah.
 
 
 =======
