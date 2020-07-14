@@ -1,9 +1,9 @@
 # UAS Konfigurasi ERP — Extra Modul — Pengembangan Modul Human Resourse (Employee) Dengan Penambahan ID Employee
-Modul ini dibuat untuk memenuhi soal UAS Konfigurasi ERP nomor 8. Dokumentasi lengkap dari pengembangan modul dan cara menggunakannya dapat diakses pada [link ini](#) atau [link ini](#). Video instalasi dan tutorial penggunaan dapat diakses pada [link ini](https://youtu.be/JUwYgzocfiU).
+Modul ini dibuat untuk memenuhi soal UAS Konfigurasi ERP nomor 8. Dokumentasi lengkap dari pengembangan modul dan cara menggunakannya dapat diakses pada [link ini](#) atau [link ini](https://docs.google.com/document/d/1zNCpZPE3IukBDXFuRpeeMxMWxu36gQfXYMe0lTV6snU/edit?usp=sharing). Video instalasi dan tutorial penggunaan dapat diakses pada [link ini](https://youtu.be/JUwYgzocfiU).
 
 # Ide Pengembangan Awal
 ## Latar Belakang
-Pada Odoo 10, karyawan (employee) hanya dapat ditambahkan satu persatu. Pada perusahaan yang baru mengimplementasi Odoo, memasukkan data karyawan akan memakan waktu yang tidak sedikit. Pengadaan fitur import employee dirasa kurang tepat digunakan mengingat banyaknya constraint dalam menambahkan karyawan baru. Oleh karena itu, diperlukan fitur (bukan fitur import) yang dapat memasukkan data banyak karyawan melalui interface Odoo dengan effort yang lebih sedikit.
+Pada Odoo 12, karyawan (employee) hanya dapat ditambahkan satu persatu. Pada perusahaan yang baru mengimplementasi Odoo, memasukkan data karyawan akan memakan waktu yang tidak sedikit. Pengadaan fitur import employee dirasa kurang tepat digunakan mengingat banyaknya constraint dalam menambahkan karyawan baru. Oleh karena itu, diperlukan fitur (bukan fitur import) yang dapat memasukkan data banyak karyawan melalui interface Odoo dengan effort yang lebih sedikit.
 
 ## Ruang Lingkup
 Modul yang akan dikembangkan akan membutuhkan modul Point of Sales dan menggunakan data transaksi yang dilakukan pada modul tersebut.
