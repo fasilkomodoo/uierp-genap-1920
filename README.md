@@ -1,5 +1,5 @@
 # UAS Konfigurasi ERP — Extra Modul — Pengembangan Modul Human Resourse (Employee) Dengan Penambahan ID Employee
-Modul ini dibuat untuk memenuhi soal UAS Konfigurasi ERP nomor 8. Dokumentasi lengkap dari pengembangan modul dan cara menggunakannya dapat diakses pada [Medium](#) atau [Google Docs](https://docs.google.com/document/d/1zNCpZPE3IukBDXFuRpeeMxMWxu36gQfXYMe0lTV6snU/edit?usp=sharing). Video instalasi dan tutorial penggunaan dapat diakses pada [Youtube](https://youtu.be/JUwYgzocfiU).
+Modul ini dibuat untuk memenuhi soal UAS Konfigurasi ERP nomor 8. Dokumentasi lengkap dari pengembangan modul dan cara menggunakannya dapat diakses pada [Medium](https://medium.com/@hachi.uierp1/uas-soal-8-extra-modul-110c3ab61aa0) atau [Google Docs](https://docs.google.com/document/d/1zNCpZPE3IukBDXFuRpeeMxMWxu36gQfXYMe0lTV6snU/edit?usp=sharing). Video instalasi dan simulasi penggunaan dapat diakses pada [Youtube](https://youtu.be/JUwYgzocfiU).
 
 # Ide Pengembangan Awal
 ## Latar Belakang
