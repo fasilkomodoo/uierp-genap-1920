@@ -10,5 +10,4 @@ Ide modul terinspirasi dari modul Odoo yang ada di apps.odoo.com yaitu "Purchase
 
 Selain itu, ada juga pada form di halaman Purchase Order suatu field "Approval Date". Saya berpikir bahwa mungkin dengan modul "Purchase Date Cancelled" yang saya buat dapat melengkapi juga tampilan yang ada pada form tersebut.
 
-Tutorial Modul : 
--
+Namun, sampai saat ini saya masih mengalami kesulitan sehingga belum dapat berfungsi. Saya akan melakukan update jika ada pembaruan.
