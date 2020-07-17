@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<odoo>
+	<record id="view_order_form_inherit_sale_invoice" model="ir.ui.view">
+		<field name="name">sale.order.form.salesinvoice.module</field>
+		<field name="model">sale.order</field>
+		<field name="inherit_id" ref="sale.view_order_form"/>
+		<field name="arch" type="xml">
+
+
+			<xpath expr="//field[@name='note']" position="after" >
+			<group>
+					<group>
+						<field name="currency_id" invisible="1"/>
+						<field name="invoice_check" widget='monetary' options="{'currency_field': 'currency_id'}" readonly="True"/>
+					</group> 
+	   
+			 </group>   
+			</xpath>
+			
+		</field>
+
+	</record>
+</odoo>
